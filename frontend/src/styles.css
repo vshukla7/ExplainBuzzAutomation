@@ -1,0 +1,188 @@
+:root {
+  color-scheme: dark;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: #0f1116;
+  color: #eef0f5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: #9ba3b4;
+  font-size: 14px;
+}
+
+.status {
+  color: #7bd5ff;
+  min-height: 24px;
+}
+
+.card {
+  border: 1px solid #1f2533;
+  background: #121620;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.step-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.badge {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: #7c5dff;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+
+.step-title {
+  font-weight: 700;
+}
+
+.step-caption {
+  color: #8a93a5;
+  font-size: 13px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.row.end {
+  justify-content: flex-end;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #0c0f17;
+  border: 1px solid #1f2533;
+  color: #eef0f5;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background: linear-gradient(90deg, #7c5dff, #4db4ff);
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: opacity 0.15s ease;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+button.ghost {
+  background: transparent;
+  border: 1px solid #2d3345;
+}
+
+.media-block {
+  margin-top: 12px;
+}
+
+.video-player,
+audio {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #1f2533;
+  background: #05070c;
+}
+
+.info {
+  margin-top: 8px;
+  color: #9ba3b4;
+  font-size: 13px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+  min-width: 200px;
+}
+
+.timeline {
+  margin-top: 12px;
+}
+
+.timeline-label {
+  color: #9ba3b4;
+  margin-bottom: 6px;
+}
+
+.timeline-bar {
+  position: relative;
+  height: 14px;
+  border-radius: 999px;
+  background: #1a1f2b;
+  overflow: hidden;
+}
+
+.segment {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #ff8f70, #ff3d54);
+  border-radius: 999px;
+}
+
+.segment-editor {
+  margin-top: 14px;
+  border: 1px dashed #1f2533;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.segment-title {
+  font-weight: 700;
+  margin-bottom: 8px;
+}

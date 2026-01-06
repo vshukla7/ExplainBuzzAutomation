@@ -1,0 +1,9 @@
+yt_dlp
+openai-whisper
+google-genai
+ellevenlabs
+ffmpeg-python
+fastapi
+uvicorn
+pydantic
+
